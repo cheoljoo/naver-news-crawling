@@ -1,0 +1,5 @@
+.env
+.naver_profile/
+out/
+__pycache__/
+.venv/
