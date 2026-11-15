@@ -74,6 +74,12 @@ uv run search_news.py "키워드" --backend legacy              # 예전 개발�
    (영문·숫자·하이픈 20자 이내, 예: `news-crawler`).
 4. 등록한 Application의 **인증 정보**에서 Client ID / Client Secret을 확인해 `.env`에 넣습니다.
 
+> **결제 카드 등록 필요**: NCP 계정에 결제 카드를 등록해야 모든 기능이 활성화됩니다
+> (사용자 확인 사항). 카드를 등록하지 않으면 일부 기능이 제한될 수 있으니, 이용 신청이나
+> Application 등록이 막히면 콘솔의 결제 수단 등록 상태부터 확인하세요.
+> 현재 검색 API는 한시적 무료로 안내되지만 유료 전환 가능성이 있으므로, 카드를 등록했다면
+> 콘솔의 사용량과 요금 공지를 가끔 확인하세요.
+
 > NCP IAM 액세스 키(`ncp_iam_...`)는 이 API에서 401이 납니다. 반드시 API HUB Application의
 > Client ID/Secret을 사용해야 합니다.
 
